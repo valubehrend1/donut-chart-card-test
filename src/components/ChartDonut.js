@@ -2,10 +2,9 @@ import React from 'react';
 import Chart from 'react-apexcharts';
 import dataDefaultOptions from './DataDefaultOptions';
 
-const ChartDonut = ({series, labels, totalLabel}) => {
+const ChartDonut = ({series, labels}) => {
 
 dataDefaultOptions.labels = labels;
-dataDefaultOptions.totalLabel = totalLabel;
 const dataOptions = JSON.parse(JSON.stringify(dataDefaultOptions));
 
   return(
