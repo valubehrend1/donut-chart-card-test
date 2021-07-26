@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+$main-font: 'Open Sans',
+sans-serif;
+.card {
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+    height: 320px;
+}
+
+@media only screen and (max-width: 450px) {
+    .card {
+        height: fit-content;
+    }
+}
+
+.card h2 {
+    font-family: $main-font;
+    font-size: 18px;
+    color: #3D4E58;
+    margin: 0;
+    padding-bottom: 2px;
+    border-bottom: 2px dotted #3D4E58;
+    display: inline-block;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-value {
+    font-family: $main-font !important;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+text.apexcharts-text.apexcharts-datalabel-label {
+    font-family: $main-font !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.apexcharts-legend.apexcharts-align-center.position-right {
+    margin-right: 20px;
+}
