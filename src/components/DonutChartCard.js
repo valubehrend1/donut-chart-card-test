@@ -3,7 +3,7 @@ import DonutChart from './ChartDonut'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
-const DonutChartCard = ({title, labels, series, totalLabel, onClick}) => {
+const DonutChartCard = ({title, labels, series, onClick}) => {
 
     return (
         <div className="card">
@@ -11,7 +11,7 @@ const DonutChartCard = ({title, labels, series, totalLabel, onClick}) => {
             <h2>{title}</h2>
             <FontAwesomeIcon icon={faEllipsisV} onClick={onClick} />
           </div>
-         <DonutChart labels={labels} series={series} totalLabel={totalLabel} />
+         <DonutChart labels={labels} series={series} />
         </div>
     );
 };
